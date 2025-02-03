@@ -8,7 +8,7 @@
 /* Background and general layout */
 body {
     font-family: Arial, sans-serif;
-    background: url('https://example.com/valentine-background.jpg') no-repeat center center fixed;
+    background: url('https://www.w3schools.com/w3images/valentines.jpg') no-repeat center center fixed; /* Valentine background */
     background-size: cover;
     color: white;
     display: flex;
@@ -22,6 +22,18 @@ body {
 /* Container for main content */
 .container {
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between items */
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 /* Buttons */
@@ -33,6 +45,8 @@ button {
     font-size: 20px;
     cursor: pointer;
     transition: transform 0.3s;
+    margin: 10px;
+    border-radius: 10px; /* Rounded buttons */
 }
 
 button:hover {
@@ -56,10 +70,10 @@ button:hover {
 
 /* Final message styling */
 .final-message h1 {
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .final-message p {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
