@@ -1,0 +1,65 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and general layout */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://example.com/valentine-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Container for main content */
+.container {
+    z-index: 1;
+}
+
+/* Buttons */
+button {
+    background-color: #f28ab2;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Hidden sections */
+#message-container, #final-message {
+    display: none;
+}
+
+/* Heart container */
+.heart-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Final message styling */
+.final-message h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.final-message p {
+    font-size: 20px;
+}
